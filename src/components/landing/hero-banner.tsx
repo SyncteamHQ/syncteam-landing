@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Head from "next/head";
 import { BsArrowUpRight } from "react-icons/bs";
+import Image from "next/image";
+import { backgroundCircle } from "../../../public/assets/landing";
 
 type Props = {
   route: string;
@@ -60,78 +62,96 @@ const HeroBanner = () => {
 
         {/* Desktop View */}
 
-        <div className="hidden md:flex flex-col text-[#1F1F1F]">
-          <h1 className="text-center font-extrabold xl:text-8xl mx-24 lg:text-6xl md:text-5xl items-center justify-center mt-40">
-            Get Paid for Your{" "}
-            <span className="bg-gradient-to-r from-[#02EC88] to-[#5CB25D] inline-block text-transparent bg-clip-text">
-              Git
-            </span>
-            <br />{" "}
-            <p className="bg-gradient-to-r from-[#02EC88] to-[#5CB25D] inline-block text-transparent bg-clip-text mt-6">
-              Contributions
-            </p>
-          </h1>
+        <div className="flex">
+          <div className="hidden md:flex flex-col text-[#1F1F1F]">
+            <h1 className="text-center font-extrabold xl:text-8xl mx-24 lg:text-6xl md:text-5xl items-center justify-center mt-40">
+              Get Paid for Your{" "}
+              <span className="bg-gradient-to-r from-[#02EC88] to-[#5CB25D] inline-block text-transparent bg-clip-text">
+                Git
+              </span>
+              <br />{" "}
+              <p className="bg-gradient-to-r from-[#02EC88] to-[#5CB25D] inline-block text-transparent bg-clip-text mt-6">
+                Contributions
+              </p>
+            </h1>
 
-          <div className="text-center mt-10 lg:mx-8 xl:mx-8 md:mx-6">
-            <p className="max-w-[700px] mx-auto text-lg md:text-xl leading-7">
-              Join bounties, and earn rewards for your coding skills and open
-              source contributions. Our smart contracts ensure fair payouts and
-              easy payment processing
-            </p>
-            {/* <p className=""> blockchain-powered Payrolls, outsource tasks 
+            <div className="text-center mt-10 lg:mx-8 xl:mx-8 md:mx-6">
+              <p className="max-w-[700px] mx-auto text-lg md:text-xl leading-7">
+                Join bounties, and earn rewards for your coding skills and open
+                source contributions. Our smart contracts ensure fair payouts
+                and easy payment processing
+              </p>
+              {/* <p className=""> blockchain-powered Payrolls, outsource tasks 
             and chat system  with A.I workspace assistant</p> */}
-          </div>
+            </div>
 
-          <div className="text-white flex flex-col md:flex-row gap-10 justify-center mt-10">
-            <LargeAuthButtons
-              route={"/signin"}
-              text={"Sign In"}
-              bgColor={"bg-[#1F1F1F]"}
-              arrowBgColor={"bg-[#26D577]"}
-            />
+            <div className="text-white flex flex-col md:flex-row gap-10 justify-center mt-10">
+              <LargeAuthButtons
+                route={"/signin"}
+                text={"Sign In"}
+                bgColor={"bg-[#1F1F1F]"}
+                arrowBgColor={"bg-[#26D577]"}
+              />
 
-            <LargeAuthButtons
-              route={"/signup"}
-              text={"Sign Up"}
-              bgColor={"bg-[#26D577]"}
-              arrowBgColor={"bg-[#1F1F1F]"}
-            />
+              <LargeAuthButtons
+                route={"/signup"}
+                text={"Sign Up"}
+                bgColor={"bg-[#26D577]"}
+                arrowBgColor={"bg-[#1F1F1F]"}
+              />
+            </div>
           </div>
+          <Image
+            width={250}
+            height={250}
+            alt="bg-circle"
+            src={backgroundCircle}
+            className="hidden md:flex absolute right-0 top-8"
+          />
         </div>
 
         {/* Mobile View */}
-        <div className="flex flex-col md:hidden text-[#1F1F1F]">
-          <h1 className="text-center font-extrabold text-3xl sm:text-5xl items-center justify-center mt-20 leading-[40px] ">
-            Get Paid for your <span className="text-[#26D577]">Git</span>
-            <br /> <span className="text-[#26D577] mt-2">Contributions</span>
-          </h1>
+        <div>
+          <div className="flex flex-col md:hidden text-[#1F1F1F]">
+            <h1 className="text-center font-extrabold text-3xl sm:text-5xl items-center justify-center mt-20 leading-[40px] ">
+              Get Paid for your <span className="text-[#26D577]">Git</span>
+              <br /> <span className="text-[#26D577] mt-2">Contributions</span>
+            </h1>
 
-          <div className="text-center leading-7 font-normal mt-4 text-sm sm:text-lg px-1">
-            <p>
-              Join bounties, and earn rewards for <br /> your coding skills and
-              open source contributions.
-            </p>
-            <p>
-              Our smart contracts ensure fair payouts and <br /> easy payment
-              processing.
-            </p>
+            <div className="text-center leading-7 font-normal mt-4 text-sm sm:text-lg px-1">
+              <p>
+                Join bounties, and earn rewards for <br /> your coding skills
+                and open source contributions.
+              </p>
+              <p>
+                Our smart contracts ensure fair payouts and <br /> easy payment
+                processing.
+              </p>
+            </div>
+
+            <div className="flex text-white flex-row gap-4 justify-center mt-12">
+              <AuthButtons
+                text={"Sign In"}
+                route={"/signin"}
+                bgColor={"bg-[#1F1F1F]"}
+                arrowBgColor={"bg-[#26D577]"}
+              />
+
+              <AuthButtons
+                text={"Sign up"}
+                route={"/signup"}
+                bgColor={"bg-[#26D577]"}
+                arrowBgColor={"bg-[#1F1F1F]"}
+              />
+            </div>
           </div>
-
-          <div className="flex text-white flex-row gap-4 justify-center mt-12">
-            <AuthButtons
-              text={"Sign In"}
-              route={"/signin"}
-              bgColor={"bg-[#1F1F1F]"}
-              arrowBgColor={"bg-[#26D577]"}
-            />
-
-            <AuthButtons
-              text={"Sign up"}
-              route={"/signup"}
-              bgColor={"bg-[#26D577]"}
-              arrowBgColor={"bg-[#1F1F1F]"}
-            />
-          </div>
+          <Image
+            width={150}
+            height={150}
+            alt="bg-circle"
+            src={backgroundCircle}
+            className="flex md:hidden absolute right-0 top-0"
+          />
         </div>
       </div>
     </div>

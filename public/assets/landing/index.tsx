@@ -7,6 +7,7 @@ import howItWorksSVG from "./how_it_works.svg";
 import creatorBountyBanner from "./creator_bounty_banner.svg";
 import creatorBountyBanner2 from "./creator_bounty_banner_2.svg";
 import darkLightMode from "./mode-dark-light.svg";
+import backgroundCircle from "./bakground-circle.svg";
 
 export {
   chatIcon,
@@ -18,4 +19,5 @@ export {
   creatorBountyBanner,
   creatorBountyBanner2,
   darkLightMode,
+  backgroundCircle,
 };
