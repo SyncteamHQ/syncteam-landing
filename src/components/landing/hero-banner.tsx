@@ -74,8 +74,8 @@ const HeroBanner = () => {
 
           <div className="text-center mt-10 lg:mx-8 xl:mx-8 md:mx-6">
             <p className="max-w-[700px] mx-auto text-lg md:text-xl leading-7">
-              We're not just another tool; we're your all-in-one solution for
-              streamlined remote collaboration
+              We&apos;re not just another tool; we&apos;re your all-in-one
+              solution for streamlined remote collaboration
             </p>
             {/* <p className=""> blockchain-powered Payrolls, outsource tasks 
             and chat system  with A.I workspace assistant</p> */}
@@ -106,8 +106,8 @@ const HeroBanner = () => {
           </h1>
 
           <div className="text-center leading-7 font-normal mt-4 text-sm sm:text-lg px-1">
-            We're not just another tool; we're your all-in-one solution for
-            streamlined remote collaboration
+            We&apos;re not just another tool; we&apos;re your all-in-one
+            solution for streamlined remote collaboration
           </div>
 
           {/* <div className="flex text-white flex-row gap-4 justify-center mt-12">

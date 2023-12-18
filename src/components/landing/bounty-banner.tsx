@@ -24,23 +24,23 @@ const BountyBanner = () => {
         />
         <p className="px-2 flex sm:hidden items-center justify-center w-auto min-w-[140px]">
           Unlike the cluttered alternatives, we believe in simplicity. Syncteam
-          doesn't overwhelm you with unnecessary features. We're here to provide
-          exactly what you need – no more, no less. <br />
+          doesn&apos;t overwhelm you with unnecessary features. We&apos;re here
+          to provide exactly what you need – no more, no less. <br />
           <br />
           Tailored for Startups, Built for Growth: Your startup is unique, and
-          so is our approach. We understand the challenges you face, and we've
-          crafted a workspace that adapts to your needs, fostering growth and
-          innovation.
+          so is our approach. We understand the challenges you face, and
+          we&apos;ve crafted a workspace that adapts to your needs, fostering
+          growth and innovation.
         </p>
         <p className="hidden sm:flex items-center justify-center min-w-[140px] max-w-[405px]">
           Unlike the cluttered alternatives, we believe in simplicity. Syncteam
-          doesn't overwhelm you with unnecessary features. We're here to provide
-          exactly what you need – no more, no less. <br />
+          doesn&apos;t overwhelm you with unnecessary features. We&apos;re here
+          to provide exactly what you need – no more, no less. <br />
           <br />
           Tailored for Startups, Built for Growth: Your startup is unique, and
-          so is our approach. We understand the challenges you face, and we've
-          crafted a workspace that adapts to your needs, fostering growth and
-          innovation.
+          so is our approach. We understand the challenges you face, and
+          we&apos;ve crafted a workspace that adapts to your needs, fostering
+          growth and innovation.
         </p>
       </div>
     </div>
