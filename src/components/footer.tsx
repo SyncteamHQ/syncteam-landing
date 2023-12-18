@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { logoWhite } from "../../public/assets/landing";
+import { syncteamLogoDark } from "../../public/assets/landing";
 
 const Footer = () => {
   return (
@@ -7,12 +7,12 @@ const Footer = () => {
       <Image
         width={150}
         height={150}
-        src={logoWhite}
+        src={syncteamLogoDark}
         alt="bounty banner"
         className="h-auto w-[120px] sm:w-[150px]"
       />
       <p className="text-white text-[15px]">
-        © 2023 Third space. All rights reserved.
+        © 2023 Syncteam. All rights reserved.
       </p>
     </div>
   );

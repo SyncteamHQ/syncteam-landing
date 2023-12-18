@@ -4,7 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai";
-import { darkLightMode, logoBlack } from "../../../public/assets/landing";
+import {
+  darkLightMode,
+  syncteamLogoWhite,
+} from "../../../public/assets/landing";
 
 interface INav {
   title: string;
@@ -28,10 +31,10 @@ export const NavItems: INav[] = [
     title: "How it Works",
     link: "#howitworks",
   },
-  {
-    title: "Road Map",
-    link: "#roadmap",
-  },
+  // {
+  //   title: "Road Map",
+  //   link: "#roadmap",
+  // },
 ];
 
 const Header = () => {
@@ -48,7 +51,7 @@ const Header = () => {
           <Image
             alt="logo"
             width={180}
-            src={logoBlack}
+            src={syncteamLogoWhite}
             className="md:w-36 lg:w-48"
           />
           <div className="flex items-center justify-center">
@@ -65,8 +68,8 @@ const Header = () => {
               </div>
             ))}
             <Link className="flex items-center justify-center" href="#">
-              <p className="text-white bg-gradient-to-r from-[#02EC88] to-[#5CB25D] px-3 py-2 rounded-full">
-                Bounties
+              <p className="text-white bg-gradient-to-r from-[#02EC88] to-[#5CB25D] px-4 py-2 rounded-full">
+                Get Started
               </p>
             </Link>
             <Image
@@ -88,7 +91,7 @@ const Header = () => {
               <Image
                 alt="logo"
                 width={150}
-                src={logoBlack}
+                src={syncteamLogoWhite}
                 onClick={() => setShow(false)}
               />
             </Link>
@@ -98,7 +101,7 @@ const Header = () => {
             <div className="fixed inset-0 h-screen bg-white block ">
               <div className="flex flex-col pt-11 font-dmSans text-lg mx-6 sm:mx-8">
                 <div className="flex justify-between">
-                  <Image src={logoBlack} alt="logo" width={150} />
+                  <Image src={syncteamLogoWhite} alt="logo" width={150} />
                   <AiOutlineCloseCircle
                     size={24}
                     onClick={() => setShow(false)}
@@ -117,8 +120,8 @@ const Header = () => {
                   </div>
                 ))}
                 <Link className="py-6" href="">
-                  <p className="text-white text-center w-[120px] bg-gradient-to-r from-[#02EC88] to-[#5CB25D] px-3 py-2 rounded-full">
-                    Bounties
+                  <p className="text-white text-center w-[150px] bg-gradient-to-r from-[#02EC88] to-[#5CB25D] px-4 py-2 rounded-full">
+                    Get Started
                   </p>
                 </Link>
                 <Image

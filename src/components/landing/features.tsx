@@ -11,13 +11,13 @@ export const FeatureItems: Props[] = [
   {
     icon: "kanban",
     title: "Kanban Board",
-    description: `Create and assign tasks to your team members so that you can know what which team member is working on at any point in time. Track progress of the tasks from assignment stage to completion`,
+    description: `Experience project management like never before. Our Kanban boards are designed with startups in mind, offering a visual and flexible way to organize tasks. It's not just a board; it's your roadmap to success.`,
   },
 
   {
     icon: "chat_icon",
     title: "Chat",
-    description: `Get access to an efficient chat system for productive team coordination and A.I chat assistant to summarize discussions and keep your teams company`,
+    description: `Unite your team effortlessly with our intuitive chat system. Say goodbye to scattered conversations and hello to streamlined communication. The conversation flows, and so does your productivity.`,
   },
 ];
 
