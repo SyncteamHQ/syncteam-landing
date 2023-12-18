@@ -23,22 +23,24 @@ const BountyBanner = () => {
           height={0}
         />
         <p className="px-2 flex sm:hidden items-center justify-center w-auto min-w-[140px]">
-          Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas
+          Unlike the cluttered alternatives, we believe in simplicity. Syncteam
+          doesn't overwhelm you with unnecessary features. We're here to provide
+          exactly what you need – no more, no less. <br />
+          <br />
+          Tailored for Startups, Built for Growth: Your startup is unique, and
+          so is our approach. We understand the challenges you face, and we've
+          crafted a workspace that adapts to your needs, fostering growth and
+          innovation.
         </p>
         <p className="hidden sm:flex items-center justify-center min-w-[140px] max-w-[405px]">
-          Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-          egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-          Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-          lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-          elementum tellus. Curabitur tempor quis eros tempus lacinia. Nam
+          Unlike the cluttered alternatives, we believe in simplicity. Syncteam
+          doesn't overwhelm you with unnecessary features. We're here to provide
+          exactly what you need – no more, no less. <br />
+          <br />
+          Tailored for Startups, Built for Growth: Your startup is unique, and
+          so is our approach. We understand the challenges you face, and we've
+          crafted a workspace that adapts to your needs, fostering growth and
+          innovation.
         </p>
       </div>
     </div>
