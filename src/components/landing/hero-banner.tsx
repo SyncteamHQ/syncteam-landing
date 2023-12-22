@@ -60,8 +60,8 @@ const HeroBanner = () => {
 
         {/* Desktop View */}
 
-        <div className="hidden md:flex flex-col text-[#1F1F1F]">
-          <h1 className="text-center font-extrabold xl:text-8xl mx-24 lg:text-6xl md:text-5xl items-center justify-center mt-40">
+        <div className="hidden md:flex flex-col">
+          <h1 className="text-center font-extrabold xl:text-8xl mx-24 lg:text-6xl md:text-5xl items-center justify-center mt-40 dark:white ">
             All-in-one Workspace for
             {/* <span className="bg-gradient-to-r from-[#02EC88] to-[#5CB25D] inline-block text-transparent bg-clip-text">
               Git

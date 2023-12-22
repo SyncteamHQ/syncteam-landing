@@ -10,6 +10,7 @@ import darkLightMode from "./mode-dark-light.svg";
 import syncteamLogoWhite from "./syncteam-white.svg";
 import syncteamLogoDark from "./syncteam-dark.svg";
 import backgroundCircle from "./bakground-circle.svg";
+import howItWorksDarkSVG from "./how_it_works_dark.svg";
 
 export {
   chatIcon,
@@ -24,4 +25,5 @@ export {
   syncteamLogoWhite,
   syncteamLogoDark,
   backgroundCircle,
+  howItWorksDarkSVG,
 };
