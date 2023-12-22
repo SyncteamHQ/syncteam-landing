@@ -5,9 +5,11 @@ import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai";
 import {
-  darkLightMode,
+  syncteamLogoDark,
   syncteamLogoWhite,
 } from "../../../public/assets/landing";
+import ThemeSwitcher from "../theme/theme-switcher";
+import { useTheme } from "next-themes";
 
 interface INav {
   title: string;
@@ -44,16 +46,29 @@ const Header = () => {
     setShow(true);
   };
 
+  const { systemTheme, theme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
   return (
     <>
       <div className="hidden mt-10 md:block top-0 left-0 w-full bg-opacity-75 p-4">
         <div className="flex justify-between sm:px-4 md:px-2 xl:px-16">
-          <Image
-            alt="logo"
-            width={180}
-            src={syncteamLogoWhite}
-            className="md:w-36 lg:w-48"
-          />
+          {currentTheme === "dark" ? (
+            <Image
+              alt="logo"
+              width={180}
+              src={syncteamLogoDark}
+              className="md:w-36 lg:w-48"
+            />
+          ) : (
+            <Image
+              alt="logo"
+              width={180}
+              src={syncteamLogoWhite}
+              className="md:w-36 lg:w-48"
+            />
+          )}
+
           <div className="flex items-center justify-center">
             {NavItems.map((item, index) => (
               <div className="" key={index}>
@@ -72,13 +87,10 @@ const Header = () => {
                 Get Started
               </p>
             </Link>
-            <Image
-              width="36"
-              height="36"
-              alt="mode icon"
-              src={darkLightMode}
-              className="sm:mx-2 lg:mx-4 xl:mx-6 md:w-6 lg:w-8 "
-            />
+
+            <div className="mx-4">
+              <ThemeSwitcher />
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +113,11 @@ const Header = () => {
             <div className="fixed inset-0 h-screen bg-white block ">
               <div className="flex flex-col pt-11 font-dmSans text-lg mx-6 sm:mx-8">
                 <div className="flex justify-between">
-                  <Image src={syncteamLogoWhite} alt="logo" width={150} />
+                  {currentTheme === "dark" ? (
+                    <Image src={syncteamLogoDark} alt="logo" width={150} />
+                  ) : (
+                    <Image src={syncteamLogoWhite} alt="logo" width={150} />
+                  )}
                   <AiOutlineCloseCircle
                     size={24}
                     onClick={() => setShow(false)}
@@ -124,13 +140,10 @@ const Header = () => {
                     Get Started
                   </p>
                 </Link>
-                <Image
-                  className="mx-4"
-                  src={darkLightMode}
-                  width="36"
-                  height="36"
-                  alt="mode icon"
-                />
+
+                <div className="mx-4">
+                  <ThemeSwitcher />
+                </div>
               </div>
             </div>
           ) : null}

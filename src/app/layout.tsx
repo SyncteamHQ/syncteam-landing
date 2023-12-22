@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Header from "@/components/nav/navbar";
+import Provider from "@/components/theme/theme-provider";
 
 export const metadata: Metadata = {
   title: "Syncteam - Home",
@@ -16,9 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        <Header />
-        {children}
-        <Footer />
+        <Provider>
+          <>
+            <Header />
+            {children}
+            <Footer />
+          </>
+        </Provider>
       </body>
     </html>
   );

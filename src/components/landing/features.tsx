@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { ChatSVG } from "../shared/SVGs/chat-svg";
 
 interface Props {
-  icon: string;
+  icon: string | React.ReactNode;
   title: string;
   description: string;
 }
@@ -15,6 +16,7 @@ export const FeatureItems: Props[] = [
   },
 
   {
+    // icon: <ChatSVG />,
     icon: "chat_icon",
     title: "Chat",
     description: `Unite your team effortlessly with our intuitive chat system. Say goodbye to scattered conversations and hello to streamlined communication. The conversation flows, and so does your productivity.`,
@@ -23,13 +25,13 @@ export const FeatureItems: Props[] = [
 
 const FeatureCard = ({ icon, title, description }: Props) => {
   return (
-    <div className="text-[#1F1F1F] shadow-xl rounded-xl first:odd:mt-16 last:even:mb-16 p-8 max-w-[485px] ">
+    <div className="text-[#1F1F1F] dark:text-white shadow-xl dark:bg-gradient-to-bl from-[#007e47] to-[#3e833f] rounded-xl first:odd:mt-16 last:even:mb-16 p-8 max-w-[485px] ">
       <Image
-        className="pt-8 sm:pt-20 bg-opacity-0"
-        src={`/assets/landing/${icon}.svg`}
-        alt={title}
         width={80}
+        alt={title}
         height={80}
+        src={`/assets/landing/${icon}.svg`}
+        className="pt-8 sm:pt-20 bg-opacity-0"
       />
       <h3 className="text-2xl font-bold my-8">{title}</h3>
       <p className="my-8 text-justify">{description}</p>
@@ -41,7 +43,7 @@ const Features = () => {
   return (
     <div
       id="features"
-      className="text-[#1F1F1F] mt-20 sm:mx-4 lg:mt-36 xl:mt-36 md:mt-36 lg:mx-24 xl:mx-48 md:mx-8"
+      className="text-[#1F1F1F] dark:text-white mt-20 sm:mx-4 lg:mt-36 xl:mt-36 md:mt-36 lg:mx-24 xl:mx-48 md:mx-8"
     >
       <h1 className="text-center font-extrabold lg:my-24 xl:my-24 md:my-24 mt-8 text-3xl">
         Features
