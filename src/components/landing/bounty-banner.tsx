@@ -35,7 +35,8 @@ const BountyBanner = () => {
         <p className="hidden sm:flex items-center justify-center min-w-[140px] max-w-[405px]">
           Unlike the cluttered alternatives, we believe in simplicity. Syncteam
           doesn&apos;t overwhelm you with unnecessary features. We&apos;re here
-          to provide exactly what you need – no more, no less. <br />
+          to provide exactly what you need – no more, no less.
+          <br />
           <br />
           Tailored for Startups, Built for Growth: Your startup is unique, and
           so is our approach. We understand the challenges you face, and

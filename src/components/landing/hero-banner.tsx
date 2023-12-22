@@ -101,7 +101,7 @@ const HeroBanner = () => {
         {/* Mobile View */}
         <div className="flex flex-col md:hidden text-[#1F1F1F]">
           <h1 className="text-center font-extrabold text-3xl sm:text-5xl items-center justify-center mt-20 leading-[40px] ">
-            All-in-one Workshop for
+            All-in-one Workspace for
             <br /> <span className="text-[#26D577] mt-2">Remote Teams</span>
           </h1>
 
