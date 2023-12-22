@@ -100,17 +100,30 @@ const Header = () => {
         <div className="flex md:hidden mx-6 sm:mx-8">
           <div className="w-full flex items-center justify-between">
             <Link href="/">
-              <Image
-                alt="logo"
-                width={150}
-                src={syncteamLogoWhite}
-                onClick={() => setShow(false)}
-              />
+              {currentTheme === "dark" ? (
+                <Image
+                  alt="logo"
+                  width={150}
+                  src={syncteamLogoDark}
+                  onClick={() => setShow(false)}
+                />
+              ) : (
+                <Image
+                  alt="logo"
+                  width={150}
+                  src={syncteamLogoWhite}
+                  onClick={() => setShow(false)}
+                />
+              )}
             </Link>
-            <AiOutlineMenu color="black" size={24} onClick={toggleMobile} />
+            <AiOutlineMenu
+              color="black dark:white"
+              size={24}
+              onClick={toggleMobile}
+            />
           </div>
           {show ? (
-            <div className="fixed inset-0 h-screen bg-white block ">
+            <div className="fixed inset-0 h-screen bg-white dark:bg-black block ">
               <div className="flex flex-col pt-11 font-dmSans text-lg mx-6 sm:mx-8">
                 <div className="flex justify-between">
                   {currentTheme === "dark" ? (
